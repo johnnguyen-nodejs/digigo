@@ -8,22 +8,25 @@ var initRouter = (app)=> {
         res.render('about', { title: "DIGIGO | About Us " });
     })
     router.get('/blog', (req,res)=>{
-        res.render('index', { title: "DIGIGO | Blog " });
+        res.render('blog', { title: "DIGIGO | Blog " });
     })
     router.get('/contact', (req,res)=>{
-        res.render('index', { title: "DIGIGO | Contact " });
+        res.render('contact', { title: "DIGIGO | Contact " });
     })
     router.get('/service', (req,res)=>{
-        res.render('index', { title: "DIGIGO | Our Services " });
+        res.render('service', { title: "DIGIGO | Our Services " });
     })
     router.get('/team', (req,res)=>{
-        res.render('index', { title: "DIGIGO | Our Team " });
+        res.render('team', { title: "DIGIGO | Our Team " });
     })
     router.get('/product', (req,res)=>{
         res.render('product', { title: "DIGIGO | Our Products " });
     })
     router.get('/exchange', (req,res)=>{
         res.render('exchange', { title: "DIGIGO | Our Exchange " });
+    })
+    router.get('/buy_sell', (req,res)=>{
+        res.render('buy_sell', { title: "DIGIGO | Buy And Sell " });
     })
     router.get('/*', (req,res)=>{
         res.redirect('/');

@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const initRouter = require('./routes');
 const app = express();
 // init view
