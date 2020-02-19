@@ -1,5 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const connectDB = require('./config/connectDB');
+const {configSession} = require('./config/connectSession');
 const initRouter = require('./routes');
 const app = express();
 // init view
@@ -11,7 +14,10 @@ app.set("views", "views");
 app.use(express.json({ extended: false }))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+//connect DB
+connectDB();
+//sessions
+configSession(app);
 //init routes 
 initRouter(app);
 
