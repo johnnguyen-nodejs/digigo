@@ -77,6 +77,10 @@
     outline: none !important;
     box-sizing: border-box;
 }
+
+option.opt-help {
+    background: #041e37;
+}
 html, body {
     color: #898989;
     font-size: 15px;
@@ -334,6 +338,13 @@ h3 {
     text-transform: none;
     margin: 20px 0 15px;
 }
+
+h3.special {
+    margin: 50px 30px;
+    padding: 20px;
+    font-size: 16px;
+    background: #041e37;
+}
 h4 {
     font-size: 15px;
     color: #e9d16f;
@@ -352,7 +363,7 @@ h5 {
 }
 p {
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.2px;
@@ -2033,7 +2044,7 @@ table.table tbody tr td {
     float: left;
     width: 100%;
     display: flex;
-    margin: 25px 0;
+    margin: 50px 0;
     position: relative;
     left: -45px;
 }
@@ -2059,11 +2070,11 @@ table.table tbody tr td {
 }
 .cryto_feature h3 {
     margin: 0;
-    font-size: 17px;
+    font-size: 20px;
 }
 .cryto_feature p {
     text-align: left;
-    font-size: 13px;
+    font-size: 16px;
     line-height: normal;
     font-weight: 400;
     color: #fff;
@@ -2084,7 +2095,7 @@ table.table tbody tr td {
 }
 .digital_earth img {
     position: relative;
-    left: -115px;
+    left: -226px;
 }
 .cryto_feature ul li:nth-child(2) {
     position: relative;
@@ -2174,7 +2185,7 @@ table.table tbody tr td {
     width: 100%;
 }
 .coin_selling_bt li {
-    width: 50%;
+    width: 100%;
     float: left;
     margin-right: -1px;
 }
@@ -2306,7 +2317,7 @@ a.pay_btn:hover, a.pay_btn:focus {
     align-items: center;
 }
 /**----- FORM STYLE -----**/
-input.field_custom {
+input.field_custom, select.field_custom {
     border: solid #e1e1e1 1px;
     width: 100%;
     background: transparent;
@@ -2575,16 +2586,17 @@ footer p a:hover, footer p a:focus {
     position: relative;
     color: #fcf8e3;
     margin-bottom: 25px;
-    margin-top: 10px;
+    margin-top: 150px;
 }
 /**================================================= 
    10. ABOUT PAGE
 =================================================**/
 .about_bg_compu {
-    background-image: url('../images/about_bg.png');
+    background-image: url('./home/asset_319.png');
     min-height: 750px;
     background-position: right;
     background-size: cover;
+    background-color: #031629;
 }
 /**================================================= 
    11. SERVICE PAGE

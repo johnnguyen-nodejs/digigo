@@ -50,8 +50,8 @@ var initRouter = (app)=> {
     router.get('/blog-detail', (req,res)=>{
         res.render('blog-detail', { title: "DIGIGO | Blog " });
     })
-    router.get('/contact', (req,res)=>{
-        res.render('contact', { title: "DIGIGO | Contact " });
+    router.get('/help', (req,res)=>{
+        res.render('help', { title: "DIGIGO | Help Center " });
     })
     router.get('/service', (req,res)=>{
         res.render('service', { title: "DIGIGO | Our Services " });
