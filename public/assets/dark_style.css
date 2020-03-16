@@ -363,7 +363,7 @@ h5 {
 }
 p {
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.2px;
@@ -2258,15 +2258,15 @@ a.pay_btn:hover, a.pay_btn:focus {
     color: #e9d16f;
 }
 .coin_price_table {
-    background: #e9d16f;
+    background: #041e37;
     border: none;
 }
 .coin_price_table h3, .coin_price_table p {
-    color: #041e37;
+    color: #fcf8e3;
 }
 .coin_price_table .pay_btn {
-    background: #041e37;
-    color: #fff;
+    background: #e9d16f;
+    color: #031629;
 }
 .token_infor_section {
     float: left;
@@ -2537,7 +2537,7 @@ footer p a:hover, footer p a:focus {
 =================================================**/
 .innerpage_banner {
     min-height: 320px;
-    background: url('../images/bg_earth_inner.png');
+    background: url('./bg_earth_inner.png');
     background-size: auto 100%;
     width: 100%;
     background-position: right;

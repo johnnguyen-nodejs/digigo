@@ -15,9 +15,7 @@ var initRouter = (app)=> {
     router.get('/', (req,res)=>{
         res.render('index', { title: "DIGIGO | Home " });
     })
-    router.get('/about', (req,res)=>{
-        res.render('about', { title: "DIGIGO | About Us " });
-    })
+
 
     router.get('/posts', (req,res)=>{
         res.render('posts', { title: "DIGIGO | Post " });
@@ -50,24 +48,52 @@ var initRouter = (app)=> {
     router.get('/blog-detail', (req,res)=>{
         res.render('blog-detail', { title: "DIGIGO | Blog " });
     })
+
+    //home routes
+    router.get('/about', (req,res)=>{
+        res.render('company/about', { title: "DIGIGO | About Us " });
+    })
     router.get('/help', (req,res)=>{
-        res.render('help', { title: "DIGIGO | Help Center " });
+        res.render('company/help', { title: "DIGIGO | Help Center " });
     })
     router.get('/service', (req,res)=>{
-        res.render('service', { title: "DIGIGO | Our Services " });
+        res.render('company/service', { title: "DIGIGO | Our Services " });
     })
     router.get('/team', (req,res)=>{
-        res.render('team', { title: "DIGIGO | Our Team " });
+        res.render('company/team', { title: "DIGIGO | Our Team " });
     })
-    router.get('/product', (req,res)=>{
-        res.render('product', { title: "DIGIGO | Our Products " });
+
+    //stock routes
+    router.get('/stock', (req, res)=>{
+        res.render('stock/stock', { title: "DIGIGO | Stock " });
+    })
+
+    //product routes
+    router.get('/platform', (req,res)=>{
+        res.render('product/digigo', { title: "DIGIGO | Digigo Platform " });
     })
     router.get('/exchange', (req,res)=>{
-        res.render('exchange', { title: "DIGIGO | Our Exchange " });
+        res.render('product/exchange', { title: "DIGIGO | Exchange " });
     })
-    router.get('/buy_sell', (req,res)=>{
-        res.render('buy_sell', { title: "DIGIGO | Buy And Sell " });
+    router.get('/digibot', (req,res)=>{
+        res.render('product/digibot', { title: "DIGIGO | Digibot " });
     })
+    //fund routes
+    router.get('/term', (req,res)=>{
+        res.render('fund/term', { title: "DIGIGO | Terms And Conditions " });
+    })
+    router.get('/invest', (req,res)=>{
+        res.render('fund/invest', { title: "DIGIGO | Invest " });
+    })
+    router.get('/partner', (req,res)=>{
+        res.render('fund/partner', { title: "DIGIGO | Partner " });
+    })
+
+    //airdrop routes
+    router.get('/airdrop', (req,res)=>{
+        res.render('airdrop/airdrop', { title: "DIGIGO | Airdrops " });
+    })
+
     router.get('/*', (req,res)=>{
         res.redirect('/');
     })
